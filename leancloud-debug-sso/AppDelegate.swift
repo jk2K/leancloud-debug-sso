@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVOSCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        initLeanCloud()
+        
+        let userDefaults = UserDefaults.standard
+        
+        if let uuid: String = userDefaults.string(forKey: UserDefaultKey.uuid.rawValue), uuid.isEmpty == false {
+            LeanCloudManager.shared.setup(with: uuid)
+            print("登录成功")
+        } else {
+            print("未登录")
+        }
+        
+        
         // Override point for customization after application launch.
         return true
     }
@@ -41,6 +54,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    // MARK: Private Helper Methods
+    fileprivate func initLeanCloud() {
+        AVOSCloud.setApplicationId(LeanCloudConfig.appId, clientKey: LeanCloudConfig.appKey)
+    }
 }
 

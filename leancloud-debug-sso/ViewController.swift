@@ -20,6 +20,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        let UUID: String = "test-uuid"
+        LeanCloudManager.shared.setup(with: UUID)
+        UserDefaults.standard.set(UUID, forKey: UserDefaultKey.uuid.rawValue)
+        UserDefaults.standard.synchronize()
+    }
 
+    @IBAction func logoutButtonTapped(_ sender: UIButton) {
+        LeanCloudManager.shared.client?.close(callback: { (success, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+        })
+        UserDefaults.standard.removeObject(forKey: UserDefaultKey.uuid.rawValue)
+        UserDefaults.standard.synchronize()
+    }
 }
 

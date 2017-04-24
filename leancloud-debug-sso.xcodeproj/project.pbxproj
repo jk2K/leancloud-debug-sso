@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		09BC857B738C9D6C602BDA32 /* Pods_leancloud_debug_sso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C6B163463E5B31B9E44E0A /* Pods_leancloud_debug_sso.framework */; };
+		BB67757B1EAE09FC00A1D10C /* LeanCloudManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB67757A1EAE09FC00A1D10C /* LeanCloudManager.swift */; };
+		BB67757D1EAE0B3200A1D10C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB67757C1EAE0B3200A1D10C /* Constant.swift */; };
+		BB67757F1EAEF49500A1D10C /* PrivateConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB67757E1EAEF49500A1D10C /* PrivateConstant.swift */; };
 		BBD77B041EAE064300B31ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD77B031EAE064300B31ABA /* AppDelegate.swift */; };
 		BBD77B061EAE064300B31ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD77B051EAE064300B31ABA /* ViewController.swift */; };
 		BBD77B091EAE064300B31ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD77B071EAE064300B31ABA /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB67757A1EAE09FC00A1D10C /* LeanCloudManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeanCloudManager.swift; sourceTree = "<group>"; };
+		BB67757C1EAE0B3200A1D10C /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		BB67757E1EAEF49500A1D10C /* PrivateConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateConstant.swift; sourceTree = "<group>"; };
 		BBD77B001EAE064300B31ABA /* leancloud-debug-sso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "leancloud-debug-sso.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD77B031EAE064300B31ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBD77B051EAE064300B31ABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				BBD77B031EAE064300B31ABA /* AppDelegate.swift */,
+				BB67757C1EAE0B3200A1D10C /* Constant.swift */,
+				BB67757E1EAEF49500A1D10C /* PrivateConstant.swift */,
 				BBD77B051EAE064300B31ABA /* ViewController.swift */,
+				BB67757A1EAE09FC00A1D10C /* LeanCloudManager.swift */,
 				BBD77B071EAE064300B31ABA /* Main.storyboard */,
 				BBD77B0A1EAE064300B31ABA /* Assets.xcassets */,
 				BBD77B0C1EAE064300B31ABA /* LaunchScreen.storyboard */,
@@ -336,7 +345,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBD77B061EAE064300B31ABA /* ViewController.swift in Sources */,
+				BB67757B1EAE09FC00A1D10C /* LeanCloudManager.swift in Sources */,
+				BB67757F1EAEF49500A1D10C /* PrivateConstant.swift in Sources */,
 				BBD77B041EAE064300B31ABA /* AppDelegate.swift in Sources */,
+				BB67757D1EAE0B3200A1D10C /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +599,7 @@
 				BBD77B2A1EAE064300B31ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBD77B2B1EAE064300B31ABA /* Build configuration list for PBXNativeTarget "leancloud-debug-ssoTests" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +608,7 @@
 				BBD77B2D1EAE064300B31ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBD77B2E1EAE064300B31ABA /* Build configuration list for PBXNativeTarget "leancloud-debug-ssoUITests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +617,7 @@
 				BBD77B301EAE064300B31ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
