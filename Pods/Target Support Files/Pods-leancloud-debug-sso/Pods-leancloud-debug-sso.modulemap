@@ -1,0 +1,6 @@
+framework module Pods_leancloud_debug_sso {
+  umbrella header "Pods-leancloud-debug-sso-umbrella.h"
+
+  export *
+  module * { export * }
+}

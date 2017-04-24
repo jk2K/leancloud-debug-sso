@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09BC857B738C9D6C602BDA32 /* Pods_leancloud_debug_sso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C6B163463E5B31B9E44E0A /* Pods_leancloud_debug_sso.framework */; };
 		BBD77B041EAE064300B31ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD77B031EAE064300B31ABA /* AppDelegate.swift */; };
 		BBD77B061EAE064300B31ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD77B051EAE064300B31ABA /* ViewController.swift */; };
 		BBD77B091EAE064300B31ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD77B071EAE064300B31ABA /* Main.storyboard */; };
@@ -47,6 +48,9 @@
 		BBD77B1F1EAE064300B31ABA /* leancloud-debug-ssoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "leancloud-debug-ssoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD77B231EAE064300B31ABA /* leancloud_debug_ssoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leancloud_debug_ssoUITests.swift; sourceTree = "<group>"; };
 		BBD77B251EAE064300B31ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7C6B163463E5B31B9E44E0A /* Pods_leancloud_debug_sso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_leancloud_debug_sso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35AA60130AF336B9D52C568 /* Pods-leancloud-debug-sso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leancloud-debug-sso.release.xcconfig"; path = "Pods/Target Support Files/Pods-leancloud-debug-sso/Pods-leancloud-debug-sso.release.xcconfig"; sourceTree = "<group>"; };
+		F9F4FAEA796C257FB497A8A0 /* Pods-leancloud-debug-sso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leancloud-debug-sso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-leancloud-debug-sso/Pods-leancloud-debug-sso.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09BC857B738C9D6C602BDA32 /* Pods_leancloud_debug_sso.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66677E8F97CE5FC5C761377C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7C6B163463E5B31B9E44E0A /* Pods_leancloud_debug_sso.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BBD77AF71EAE064300B31ABA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				BBD77B171EAE064300B31ABA /* leancloud-debug-ssoTests */,
 				BBD77B221EAE064300B31ABA /* leancloud-debug-ssoUITests */,
 				BBD77B011EAE064300B31ABA /* Products */,
+				D33B6BBCF9641810F5943588 /* Pods */,
+				66677E8F97CE5FC5C761377C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = "leancloud-debug-ssoUITests";
 			sourceTree = "<group>";
 		};
+		D33B6BBCF9641810F5943588 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9F4FAEA796C257FB497A8A0 /* Pods-leancloud-debug-sso.debug.xcconfig */,
+				F35AA60130AF336B9D52C568 /* Pods-leancloud-debug-sso.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBD77B281EAE064300B31ABA /* Build configuration list for PBXNativeTarget "leancloud-debug-sso" */;
 			buildPhases = (
+				0560731399998F739786EF60 /* [CP] Check Pods Manifest.lock */,
 				BBD77AFC1EAE064300B31ABA /* Sources */,
 				BBD77AFD1EAE064300B31ABA /* Frameworks */,
 				BBD77AFE1EAE064300B31ABA /* Resources */,
+				00B063E1D10CD6FBB371CCC4 /* [CP] Embed Pods Frameworks */,
+				EABBA0BB2F39956A9BA9881D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,7 @@
 				TargetAttributes = {
 					BBD77AFF1EAE064300B31ABA = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = KVX2YLJM54;
 						ProvisioningStyle = Automatic;
 					};
 					BBD77B131EAE064300B31ABA = {
@@ -253,6 +281,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00B063E1D10CD6FBB371CCC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-leancloud-debug-sso/Pods-leancloud-debug-sso-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0560731399998F739786EF60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EABBA0BB2F39956A9BA9881D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-leancloud-debug-sso/Pods-leancloud-debug-sso-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BBD77AFC1EAE064300B31ABA /* Sources */ = {
@@ -412,8 +488,10 @@
 		};
 		BBD77B291EAE064300B31ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9F4FAEA796C257FB497A8A0 /* Pods-leancloud-debug-sso.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KVX2YLJM54;
 				INFOPLIST_FILE = "leancloud-debug-sso/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jk2K.leancloud-debug-sso";
@@ -424,8 +502,10 @@
 		};
 		BBD77B2A1EAE064300B31ABA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F35AA60130AF336B9D52C568 /* Pods-leancloud-debug-sso.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KVX2YLJM54;
 				INFOPLIST_FILE = "leancloud-debug-sso/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jk2K.leancloud-debug-sso";
