@@ -29,6 +29,7 @@ class LeanCloudManager: NSObject {
             if let _error: NSError = error as NSError? {
                 print(_error)
             }
+            print("已连接上 LeanCloud")
         }
         self.client = client
     }
@@ -41,7 +42,7 @@ extension LeanCloudManager: AVIMClientDelegate {
         let error: NSError = error as NSError
         
         if error.code == 4111 {
-            print(error)
+            print(error.localizedDescription)
         } else {
             print(error)
         }

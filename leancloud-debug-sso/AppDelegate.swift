@@ -8,12 +8,12 @@
 
 import UIKit
 import AVOSCloud
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         initLeanCloud()
@@ -57,6 +57,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: Private Helper Methods
     fileprivate func initLeanCloud() {
         AVOSCloud.setApplicationId(LeanCloudConfig.appId, clientKey: LeanCloudConfig.appKey)
+        AVOSCloud.setAllLogsEnabled(false)
+    }
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    
+    // MARK:  Notification
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print("NotificationCenterDelegate: 获得了权限通知权限")
+        AVOSCloud.handleRemoteNotifications(withDeviceToken: deviceToken)
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print(error)
     }
 }
 
